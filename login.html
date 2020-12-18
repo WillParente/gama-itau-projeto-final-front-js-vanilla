@@ -4,39 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashCard System</title>
+    <script type="text/javascript" src="js/scripts.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script type="text/javascript" src="js/usuario.js"></script>
-    <title>Login</title>
 </head>
 
 <body>
     <div class="container">
         <div class="row">
-            <div class="col=12">
-                <h3 style="text-align: center;">SEJA BEM-VINDO</h3>
+            <div class="col-12">
+                <h3 style="text-align: center;">DashCard System</h3>
             </div>
         </div>
-        <br>
-        <div class="input-group flex-nowrap">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="addon-wrapping">Username</span>
+        <div class="row">
+            <div class="col-1">
+                <h5 style="text-align: center;">Sign In</h5>
             </div>
-            <input id="txtusername" type="text" class="form-control" placeholder="Email" aria-label="Username"
-                aria-describedby="addon-wrapping">
         </div>
-        <br>
-        <div class="input-group flex-nowrap">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="addon-wrapping">Senha</span>
-            </div>
-            <input id="txtsenha" type="password" class="form-control" placeholder="Password" aria-label="Username"
-                aria-describedby="addon-wrapping">
+        <div class="row">
+            <!--<form onSubmit="logar()">-->
+                <label for="txtusername">User Name:</label>
+                <div class="input-group mb-3">
+                    <br>
+                    <div class="input-group flex-nowrap">
+                        <input id="txtusername" type="text" class="form-control" placeholder="Username"
+                            aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                </div>
+                <br>
+                <label for="txtsenha">Password:</label>
+                <div class="input-group mb-3">
+                    <br>
+                    <div class="input-group flex-nowrap">
+                        <input id="txtsenha" type="password" class="form-control" placeholder="Digite a Senha"
+                            aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <input type="submit" onclick="logar()" class="btn btn-primary" value="SIGN IN" />
+            <!--</form>-->
         </div>
-        <br>
-        <button type="button" class="btn btn-primary" onclick="logar()">Login</button>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>

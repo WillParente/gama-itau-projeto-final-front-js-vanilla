@@ -17,7 +17,7 @@ function logar() {
     })
     .catch((err) => {
       window.alert("Login inválido");
-      window.location = "login.html";
+      window.location = "index.html";
     });
 }
 
@@ -39,7 +39,7 @@ function validateUsernameInput() {
 
 function logout() {
   localStorage.removeItem("loggeduser");
-  window.location = "login.html";
+  window.location = "index.html";
 }
 
 function carregarpagina() {
@@ -50,7 +50,7 @@ function carregarpagina() {
 function exibirusuario() {
   var usuariostr = localStorage.getItem("loggeduser");
   if (usuariostr == null) {
-    window.location = "login.html";
+    window.location = "index.html";
   } else {
     var usuariojson = JSON.parse(usuariostr);
     document.getElementById("foto").innerHTML = "<img onerror=\"this.onerror=null; this.src='../images/default.png'\" src=\"../images/" + usuariojson.foto + "\" width=75px>"

@@ -13,31 +13,32 @@
 </head>
 
 <body onload="carregarpagina()">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a class="navbar-brand" id="foto" href="telaagente.html"></a>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <span id="racf" class="badge badge-default"></span>
-                            </li>
-                        </ul>
-                        <ul class="navbar-nav ml-md-auto">
-                            <li class="nav-item">
-                                <button class="btn btn-primary " type="button" id="btnlogout"
-                                    onclick="logout()">LOGOUT</button>
-                            </li>
-                        </ul>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="telaagente.html">
+            <img src="https://www.itau.com.br/content/dam/itau/varejo/logo-itau-varejo-desktop.png" class="brand_logo"
+                alt="Logo" width="50px">
+        </a>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="navbar-nav ml-md-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle foto" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="foto"></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#" id="racf"></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#" onclick="logout()">Logout</a>
                     </div>
-                </nav>
-            </div>
+                  </li>
+            </ul>
         </div>
+    </nav>
+    <br>
+    <br>
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-4">

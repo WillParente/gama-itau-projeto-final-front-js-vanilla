@@ -106,7 +106,7 @@ function carregartransactions() {
   exibirusuario();
   const urlParams = new URLSearchParams(window.location.search);
   const id = urlParams.get('id');
-  getagente(id)
+  getagente(id);
   listarsucesso(id);
   listarfalhas(id);
   listarfraudes(id);
